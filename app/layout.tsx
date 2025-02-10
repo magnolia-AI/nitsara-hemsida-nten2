@@ -1,26 +1,32 @@
 import './globals.css'
-  import type { Metadata } from 'next'
-  import { Toaster } from "@/components/ui/toaster"
-  import { Inter } from 'next/font/google'
-  
-  const inter = Inter({ subsets: ['latin'] })
-  
-  export const metadata: Metadata = {
-  title: 'Magnolia App',
-  description: 'Built with Next.js and Tailwind CSS',
-  }
-  
-  export default function RootLayout({
+import { Inter } from 'next/font/google'
+import { MainNav } from '../components/main-nav'
+const inter = Inter({ subsets: ['latin'] })
+export const metadata = {
+  title: 'Lifestyle & Fashion',
+  description: 'A curated space for fashion, beauty, and lifestyle',
+}
+export default function RootLayout({
   children,
-  }: {
+}: {
   children: React.ReactNode
-  }) {
+}) {
   return (
-  <html lang="en" className="h-full">
-    <body className={`${inter.className} h-full`}>
-    {children}
-    <Toaster />
-    </body>
-  </html>
+    <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className={inter.className}>
+        <header className="fixed top-0 left-0 right-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+          <div className="container flex h-16 items-center">
+            <MainNav />
+          </div>
+        </header>
+        {children}
+      </body>
+    </html>
   )
-  }
+}

@@ -32,7 +32,7 @@ export function MainNav() {
       <NavigationMenuList>
         {Object.values(categories).map((category) => (
           <NavigationMenuItem key={category.name}>
-            <NavigationMenuTrigger>{category.name}</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="serif-heading font-normal">{category.name}</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[200px] gap-3 p-4">
                 {category.items.map((item) => (
@@ -40,7 +40,7 @@ export function MainNav() {
                     <NavigationMenuLink asChild>
                       <Link
                         href={item.href}
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        className="block select-none space-y-1 rounded-none p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground sans-text"
                       >
                         {item.title}
                       </Link>
