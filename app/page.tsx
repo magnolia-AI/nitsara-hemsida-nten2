@@ -32,7 +32,7 @@ export default function Home() {
             <CardContent className="pt-6">
               <div className="image-frame mb-6">
                 <Image
-                  src="/fashion-placeholder.jpg"
+                  src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80"
                   alt="Fashion"
                   width={300}
                   height={200}
@@ -49,7 +49,7 @@ export default function Home() {
             <CardContent className="pt-6">
               <div className="image-frame mb-6">
                 <Image
-                  src="/beauty-placeholder.jpg"
+                  src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80"
                   alt="Beauty"
                   width={300}
                   height={200}
@@ -66,7 +66,7 @@ export default function Home() {
             <CardContent className="pt-6">
               <div className="image-frame mb-6">
                 <Image
-                  src="/lifestyle-placeholder.jpg"
+                  src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?w=800&q=80"
                   alt="Lifestyle"
                   width={300}
                   height={200}
