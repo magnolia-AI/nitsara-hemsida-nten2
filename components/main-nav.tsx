@@ -29,18 +29,20 @@ const categories = {
 export function MainNav() {
   return (
     <NavigationMenu>
-      <NavigationMenuList>
+      <NavigationMenuList className="gap-8">
         {Object.values(categories).map((category) => (
           <NavigationMenuItem key={category.name}>
-            <NavigationMenuTrigger className="serif-heading font-normal">{category.name}</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="serif-heading font-normal text-base hover:bg-transparent">
+              {category.name}
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid w-[200px] gap-3 p-4">
+              <ul className="grid w-[200px] gap-3 p-6 bg-background/95 backdrop-blur-sm">
                 {category.items.map((item) => (
                   <li key={item.title}>
                     <NavigationMenuLink asChild>
                       <Link
                         href={item.href}
-                        className="block select-none space-y-1 rounded-none p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground sans-text"
+                        className="block select-none rounded-none p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-accent/50 hover:translate-x-1 sans-text"
                       >
                         {item.title}
                       </Link>
