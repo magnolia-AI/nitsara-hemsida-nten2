@@ -9,19 +9,19 @@
     --card-foreground: 20 12% 20%;
      --popover: 45 47% 98%;
     --popover-foreground: 20 12% 20%;
-     --primary: 32 30% 85%;
+     --primary: 150 15% 70%;
     --primary-foreground: 20 12% 20%;
-     --secondary: 120 7% 85%;
+     --secondary: 120 15% 85%;
     --secondary-foreground: 20 12% 20%;
-     --muted: 32 30% 95%;
+     --muted: 150 20% 96%;
     --muted-foreground: 20 12% 40%;
-     --accent: 120 7% 90%;
+     --accent: 150 20% 92%;
     --accent-foreground: 20 12% 20%;
      --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 60 9.1% 97.8%;
-    --border: 32 30% 90%;
-    --input: 32 30% 90%;
-    --ring: 20 12% 20%;
+    --border: 150 15% 90%;
+    --input: 150 15% 90%;
+    --ring: 150 15% 40%;
      --radius: 0.5rem;
   }
    .dark {
@@ -31,19 +31,19 @@
     --card-foreground: 45 47% 98%;
      --popover: 20 12% 12%;
     --popover-foreground: 45 47% 98%;
-     --primary: 32 30% 25%;
+     --primary: 150 15% 30%;
     --primary-foreground: 45 47% 98%;
-     --secondary: 120 7% 25%;
+     --secondary: 120 15% 25%;
     --secondary-foreground: 45 47% 98%;
-     --muted: 32 30% 20%;
+     --muted: 150 15% 20%;
     --muted-foreground: 45 47% 80%;
-     --accent: 120 7% 20%;
+     --accent: 150 15% 25%;
     --accent-foreground: 45 47% 98%;
      --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 45 47% 98%;
-     --border: 32 30% 25%;
-    --input: 32 30% 25%;
-    --ring: 45 47% 98%;
+     --border: 150 15% 25%;
+    --input: 150 15% 25%;
+    --ring: 150 15% 70%;
   }
 }
  @layer base {
@@ -60,4 +60,13 @@
 }
 .sans-text {
   font-family: 'Inter', sans-serif;
+}
+.gradient-text {
+  @apply bg-gradient-to-r from-emerald-800/80 to-stone-600/80 bg-clip-text text-transparent;
+}
+.hover-green {
+  @apply hover:bg-emerald-50 transition-colors duration-200;
+}
+.green-border {
+  @apply border-emerald-100;
 }
