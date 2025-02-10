@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
-import Image from 'next/image'
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
@@ -30,14 +29,8 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <Card className="bg-background/80 backdrop-blur-sm border-none shadow-sm hover:shadow-md transition-all duration-300 rounded-none hover-lift">
             <CardContent className="pt-6">
-              <div className="image-frame mb-6">
-                <Image
-                  src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80"
-                  alt="Fashion"
-                  width={300}
-                  height={200}
-                  className="object-cover w-full h-48"
-                />
+              <div className="w-full h-48 mb-6 bg-stone-100 flex items-center justify-center">
+                <span className="serif-heading text-stone-300">Fashion</span>
               </div>
               <h3 className="serif-heading text-xl font-normal mb-3">Fashion</h3>
               <p className="text-muted-foreground leading-relaxed sans-text">
@@ -47,14 +40,8 @@ export default function Home() {
           </Card>
           <Card className="bg-background/80 backdrop-blur-sm border-none shadow-sm hover:shadow-md transition-all duration-300 rounded-none hover-lift">
             <CardContent className="pt-6">
-              <div className="image-frame mb-6">
-                <Image
-                  src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80"
-                  alt="Beauty"
-                  width={300}
-                  height={200}
-                  className="object-cover w-full h-48"
-                />
+              <div className="w-full h-48 mb-6 bg-stone-100 flex items-center justify-center">
+                <span className="serif-heading text-stone-300">Beauty</span>
               </div>
               <h3 className="serif-heading text-xl font-normal mb-3">Beauty</h3>
               <p className="text-muted-foreground leading-relaxed sans-text">
@@ -64,14 +51,8 @@ export default function Home() {
           </Card>
           <Card className="bg-background/80 backdrop-blur-sm border-none shadow-sm hover:shadow-md transition-all duration-300 rounded-none hover-lift">
             <CardContent className="pt-6">
-              <div className="image-frame mb-6">
-                <Image
-                  src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?w=800&q=80"
-                  alt="Lifestyle"
-                  width={300}
-                  height={200}
-                  className="object-cover w-full h-48"
-                />
+              <div className="w-full h-48 mb-6 bg-stone-100 flex items-center justify-center">
+                <span className="serif-heading text-stone-300">Lifestyle</span>
               </div>
               <h3 className="serif-heading text-xl font-normal mb-3">Lifestyle</h3>
               <p className="text-muted-foreground leading-relaxed sans-text">
